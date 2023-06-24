@@ -1,0 +1,7 @@
+{% if logged_in %}
+    <p>You are logged in.</p>
+    <p>Session ID: {{ session_id }}</p>
+    <p>Session expires at: {{ expires_at }}</p>
+{% else %}
+    <p>You are not logged in.</p>
+{% endif %}
